@@ -1,8 +1,12 @@
 import path from 'path'
+import webpack from 'webpack'
 
 export default {
   devtool: 'eval', // cheap-module-eval-source-map (least taxing map to original code)
-  entry: './src/index',
+  entry: [
+    'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
+    './src/index'
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -18,4 +22,9 @@ export default {
       }
     ],
   },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 }
