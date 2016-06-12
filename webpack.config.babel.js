@@ -4,7 +4,7 @@ import webpack from 'webpack'
 export default {
   devtool: 'eval', // cheap-module-eval-source-map (least taxing map to original code)
   entry: [
-    'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
     './src/index'
   ],
   output: {
@@ -16,7 +16,7 @@ export default {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loaders: ['react-hot', 'babel'], // equivalent to loader: 'react-hot!babel'
         exclude: /node_modules/,
         include: __dirname,
       }

@@ -10,9 +10,8 @@ const port = 3000
 
 const compiler = webpack(config)
 app.use(webpackDevMiddleware(compiler, {
-  hot: true,
   noInfo: true,
-  publicPath: config.output.publicPath
+  publicPath: config.output.publicPath,
 }))
 
 app.use(webpackHotMiddleware(compiler))
