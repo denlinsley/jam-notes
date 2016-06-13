@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server', // doesn't reoload the browerser upon errors (preserves React state)
+    'webpack/hot/only-dev-server', // doesn't reload the browser upon errors (preserves React state)
     // 'webpack/hot/dev-server', // reloads even on errors
     './src/index'
   ],

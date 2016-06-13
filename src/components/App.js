@@ -1,4 +1,5 @@
-import React, { Component, } from 'react'
+import React, { Component } from 'react'
+import PhishTest from './PhishTest'
 
 // IMPORTANT! HMR won't work if root component is in entry file,
 // or if root component is a stateless functional component
@@ -6,7 +7,10 @@ import React, { Component, } from 'react'
 export default class App extends Component {
   render () {
     return (
-      <h1>It works!</h1>
+      <div>
+        <h1>It works!</h1>
+        <PhishTest />
+      </div>
     )
   }
 }
