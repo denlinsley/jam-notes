@@ -1,4 +1,5 @@
 /*! phishin-js -  0.0.1 - 2015-03-24 */
+/* eslint-disable */
 var Phish = {};
 
 Phish.Phishin = function (settings) {

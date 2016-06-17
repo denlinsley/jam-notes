@@ -1,8 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
-import App from './components/App'
+import { render } from 'react-dom';
+import routes from './config/routes.js';
 
 render(
-  <App />,
+  routes,
   document.getElementById('root')
-)
+);

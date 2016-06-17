@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import PhishTest from './PhishTest'
+import React from 'react';
+import { withRouter } from 'react-router';
+// import routes from '../config/routes';
 
 // IMPORTANT! HMR won't work if root component is in entry file,
 // or if root component is a stateless functional component
 // https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md#the-following-modules-couldnt-be-hot-updated-they-would-need-a-full-reload
-export default class App extends Component {
-  render () {
+class App extends React.Component {
+  render() {
     return (
-      <div>
-        <h1>It works!</h1>
-        <PhishTest />
-      </div>
-    )
+      {/* routes - does not work here */}
+    );
   }
 }
+
+export default withRouter(App);

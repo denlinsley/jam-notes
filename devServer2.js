@@ -2,7 +2,8 @@ var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config2.babel.js');
 
-// you can still call this with `node devServer2.js` in a script (don't have to reference node_module for WDS)
+// you can still call this with `node devServer2.js` in a script 
+// you don't have to reference the node_module directly to use WDS
 new WebpackDevServer(webpack(config), {
   historyApiFallback: true,
   hot: true,

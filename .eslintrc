@@ -1,9 +1,8 @@
 {
-  "extends": ["standard", "plugin:react/recommended"],
+  "extends": ["airbnb"],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
     },
-  },
-  "plugins": ["react"]
+  }
 }
