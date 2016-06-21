@@ -5,6 +5,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware'
 import config from './webpack.config.babel'
 import Express from 'express'
 
+// the advantage of this setup is that you get in-browser webpack errors (black overlay)
 const app = new Express()
 const port = 3000
 

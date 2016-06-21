@@ -1,5 +1,5 @@
-import React from 'react';
-import { withRouter } from 'react-router';
+import React from 'react'
+import { withRouter } from 'react-router'
 // import routes from '../config/routes';
 
 // IMPORTANT! HMR won't work if root component is in entry file,
@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       {/* routes - does not work here */}
-    );
+    )
   }
 }
 
-export default withRouter(App);
+export default withRouter(App)
