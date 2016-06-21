@@ -1,11 +1,11 @@
 module.exports = {
-  "extends": ["airbnb"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
+  extends: ['airbnb'],
+  parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
     }
   },
-  "rules": {
-    semi: ["error", "never"]
+  rules: {
+    semi: ['error', 'never']
   }
 };
